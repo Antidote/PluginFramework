@@ -6,6 +6,7 @@ GameDocument::GameDocument(const PluginInterface* loader, const QString& file)
       m_isWiiSave(false),
       m_keyManager(NULL)
 {
+
 }
 
 QString GameDocument::game() const
