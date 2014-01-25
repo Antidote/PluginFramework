@@ -35,11 +35,20 @@ public:
     /// \brief Absolute path to file, including filename.
     QString filePath() const;
 
+    /// \brief Sets the absolute path to the file.
+    void setFilePath(const QString& filepath);
+
+    /// \brief Returns the plugin instance which loaded or created the document.
     PluginInterface* loadedBy();
+
+    /// \brief Sets whether the document has been modified
+    /// TODO: Turn it into a protected member?
     void setDirty(bool dirty);
+
+    /// \brief Returns whether the document has been modified
     virtual bool isDirty();
 
-    virtual bool save(const QString& filename = QString());
+    virtual bool save(const QString& filepath = QString());
     virtual bool reload();
 signals:
     void modified();
