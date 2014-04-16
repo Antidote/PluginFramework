@@ -26,6 +26,7 @@ public:
     virtual PluginsManager* pluginsManager()  const=0;
     virtual QDir            engineDataPath()  const=0;
     virtual QUrl            engineExecutable()const=0;
+    virtual QDir            homePath()        const=0;
 };
 
 #endif // MAINWINDOWBASE_HPP
