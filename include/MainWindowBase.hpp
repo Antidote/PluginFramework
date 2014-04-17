@@ -27,6 +27,10 @@ public:
     virtual QDir            engineDataPath()  const=0;
     virtual QUrl            engineExecutable()const=0;
     virtual QDir            homePath()        const=0;
+    virtual void            message(const QString&)=0;
+    virtual void            warning(const QString&)=0;
+    virtual void            error  (const QString&)=0;
+    virtual void            fatal  (const QString&)=0;
 };
 
 #endif // MAINWINDOWBASE_HPP
