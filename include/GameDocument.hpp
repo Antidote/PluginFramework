@@ -27,7 +27,7 @@ public:
     GameDocument(const PluginInterface* loader, const QString& file = QString());
     virtual QString game() const;
     virtual bool supportsWiiSave() const=0;
-    virtual bool exportWiiSave() const=0;
+    virtual bool exportWiiSave()=0;
     virtual bool isWiiSave() const;
     virtual WiiKeyManagerBase* keyManager();
     virtual void setKeyManager(WiiKeyManagerBase* manager);
