@@ -14,16 +14,6 @@ QString GameDocument::game() const
     return "UNKNOWN";
 }
 
-bool GameDocument::supportsWiiSave() const
-{
-    return false;
-}
-
-bool GameDocument::exportWiiSave()
-{
-    return false;
-}
-
 bool GameDocument::isWiiSave() const
 {
     return m_isWiiSave;
