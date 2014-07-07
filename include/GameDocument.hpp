@@ -25,6 +25,7 @@ class GameDocument : public DocumentBase
     Q_OBJECT
 public:
     GameDocument(const PluginInterface* loader, const QString& file = QString());
+    virtual ~GameDocument();
     virtual QString game() const;
     virtual bool supportsWiiSave() const=0;
     virtual bool exportWiiSave()=0;
