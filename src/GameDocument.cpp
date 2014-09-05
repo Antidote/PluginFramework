@@ -9,6 +9,10 @@ GameDocument::GameDocument(const PluginInterface* loader, const QString& file)
 
 }
 
+GameDocument::~GameDocument()
+{
+}
+
 QString GameDocument::game() const
 {
     return "UNKNOWN";
